@@ -35,7 +35,19 @@ if answer == 'Yes' or answer == 'yes':
         num = int(input(f"Gat you!\nHow many Fruit paps would do {name} ?  "))
         total = amount * num
         print(f"Good one {name}!\n{num} Fruit paps will cost ${total}")
-        final = input("Enter 'Shop' to package your fruit pap or 'Cancel' to cancel transaction.  ")
+        meat_pie = input("Fruit pap always go with meat pie($5 each), Would you need some ?\nUse 'yes or 'no' ")
+        if meat_pie == 'Yes' or meat_pie == 'yes':
+            meat_pie_price = 5
+            meat_pie_num = int(input("How many would be okay for you please ?  "))
+            meat_pie_final_price = meat_pie_price *  meat_pie_num
+            print(f"Got it!\nOrdered meat pie is ${meat_pie_final_price}.")
+            final_total = total + meat_pie_final_price
+            print(f"Well {name}, your final total is: ${final_total}.")
+        elif meat_pie == 'No' or meat_pie == 'no':
+            print("Okay got it!\nNo meat pie for you...")
+        else:
+            print("Sorry!\nThat is an incorrect input. Try again.")
+        final = input("Enter 'Shop' to package your shopping or 'Cancel' to cancel transaction.  ")
         if final == 'Shop' or final == 'shop':
             print(f"Thank you {name}!\nYou can now go to the counter, pay and collect your goods.")
         elif final == 'Cancel' or final == 'cancel':
@@ -47,7 +59,37 @@ if answer == 'Yes' or answer == 'yes':
         num = int(input(f"Good!\nHow many Fruit juice cups would be okay {name} ?  "))
         total = amount * num
         print(f"Okay {name}!\n{num} Fruit juice cups will cost ${total}")
-        final = input("Enter 'Shop' to package your fruit juice or 'Cancel' to cancel transaction.  ")
+        pisa = input(f"{name}, Fruit juice go well with Pizza most often. Would you try it ?\nUse 'yes' or 'no' ")
+        if pisa == 'Yes' or pisa == 'yes':
+            pisa_sise = int(input("Select...\n1. Small(1.4kg) is $3.\n2. Medium(2.9kg) is $5.\n3. Large(5kg) is $7.\nEnter 1, 2 or 3 to select your preferred size:  "))
+            if pisa_sise == 1:
+                pisa_price = 3
+                pisa_num = int(input("How many 1.4kg Pizza would do please ?  "))
+                total_pisa = pisa_price * pisa_num
+                print(f"Noted {name}.\nOrdered Pizza costs ${total_pisa}")
+                total_shopping = total + total_pisa
+                print(f"The total of your Fruit juice and Pizza is: ${total_shopping}")
+            elif pisa_sise == 2:
+                pisa_price = 5
+                pisa_num = int(input("How many 2.9kg Pizza would do please ?  "))
+                total_pisa = pisa_price * pisa_num
+                print(f"Got it {name}!\nOrdered Pizza costs ${total_pisa}")
+                total_shopping = total + total_pisa
+                print(f"The total of your Fruit juice and Pizza is: ${total_shopping}")
+            elif pisa_sise == 3:
+                pisa_price = 7
+                pisa_num = int(input("How many 5kg Pizza would be enough ?  "))
+                total_pisa = pisa_price * pisa_num
+                print(f"Alright {name}!\nOrdered Pizza costs ${total_pisa}")
+                total_shopping = total + total_pisa
+                print(f"The total of your Fruit juice and Pizza is: ${total_shopping}")
+            else:
+                print("Sorry...\nThis input is an incorrect option\nCheck the list and try again")
+        elif pisa == 'No' or pisa == 'no':
+            print("Okay, Noted!\nNo Pizza for you.")
+        else:
+            print("Sorry...\nWrong input. Read instructions and try again.")
+        final = input("Enter 'Shop' to package your foods or 'Cancel' to cancel transaction.  ")
         if final == 'Shop' or final == 'shop':
             print(f"Thank you {name}!\nYou can now go to the counter, pay and collect your goods.")
         elif final == 'Cancel' or final == 'cancel':
