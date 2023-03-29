@@ -115,6 +115,10 @@ if answer == 'Yes' or answer == 'yes':
             print("Unrecognised!\nTry again please.")
     else:
         print(f"Wrong input {name}.\nRead instructions and try again.")
+    print(f"Please {name}.\nWe would love to let you know that we are working on launching a movie cinema in G.R.A Enugu.")
+    print("We love to serve our customers better so we receive suggestions from our customers\nconcerning our current project.")
+    cinema_answer = input("Please tell us just one junk food you would enjoy eating\nwhile seeing a movie in a movie cinema:  ")
+    print(f"Thats cool!\n{cinema_answer} is noted thank you!")
     print(f"Please {name}, we would love you give us a rating...")
     rating = int(input("1. *\n2. **\n3. ***\n4. ****\n5. *****\nEnter 1,2,3,4 or 5 to give us number of star rating(s):  "))
     if rating == 1:
@@ -128,7 +132,7 @@ if answer == 'Yes' or answer == 'yes':
     elif rating == 5:
         print(f"We are so glad you enjoy our services {name}.\nWe will keep working to serve you better always...")
     else:
-        print("Sorry!\nWrong input. Try again next time.")
+        print("Sorry!\nWrong input. Try again next time.")    
 elif answer == 'No' or answer == 'no':
     print(f"Okay cool!\nThanks for tuning in {name}.")
 else:
