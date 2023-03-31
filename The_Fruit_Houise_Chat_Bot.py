@@ -130,7 +130,20 @@ if answer == 'Yes' or answer == 'yes':
     elif rating == 4:
         print(f"Wow that is a cool rating {name}. Thanks!!!")
     elif rating == 5:
-        print(f"We are so glad you enjoy our services {name}.\nWe will keep working to serve you better always...")
+        print(f"We are so glad you enjoy our services {name}.")
+#        gift = 7
+        print(f"For giving us the best rating {name}, You stand a chance to win a free gift extra from our shop.")
+#        gift_input = int(input("Enter your number of choice between 1 and 5(Both numbers inclusive).\nYou have only one chance:  "))
+        for gift_input in range(0, 6):
+            gift_input = int(input("Enter your number of choice between 1 and 5(Both numbers inclusive).\nYou have only one chance:  "))
+            if gift_input == 4:
+                print(f"Congratulations {name}!!!\nYou have won a 9.5kg burger and it will added to your package.")
+                break
+            else:
+                print("Sorry...\nYou did not win today")
+                break
+        else:
+            print("Participate in this offer next time.\nThank you.")
     else:
         print("Sorry!\nWrong input. Try again next time.")    
 elif answer == 'No' or answer == 'no':
