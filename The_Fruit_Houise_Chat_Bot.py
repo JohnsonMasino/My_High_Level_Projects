@@ -135,17 +135,26 @@ if answer == 'Yes' or answer == 'yes':
         print(f"We are so glad you enjoy our services {name}.")
 #        gift = 7
         print(f"For giving us the best rating {name}, You stand a chance to win a free gift extra from our shop.")
-        generated_number = rd.randint(1, 5)
-
-        for gift_input in range(1, 5):
-            gift_input = int(input("Enter your number of choice between 1 and 5(Both numbers inclusive).\nYou have only one chance:  "))
+        print("Enter a number from 1 through 9 to try your luck")
+        generated_number = rd.randint(1, 9)
+        trial_times = 2
+        while True:
+            try:
+                gift_input = int(input("Enter a number to win:  "))
+            except ValueError:
+                print("You did not enter a number")
             if gift_input == generated_number:
-                print(f"Congratulations {name}!!!\nYou have won a 9.5kg burger and it will added to your package.")
+                print(f"Congratulations {name}!!!\nYou have won a 9.5kg burger and a 75cl extra juice($78 in total")
+                print("They will be added to your package and delivered to you ASAP.")
                 break
-            else:
+            elif trial_times == 0:
                 print("Sorry...\nYou did not win today")
                 print("The gift was packeged in the number: ", generated_number)
                 break
+            else:
+                print(f"Wrong number!\nTry again. You have {trial_times} chances left")
+                trial_times -= 1
+                continue
         else:
             print("Participate in this offer next time.\nThank you.")
     else:
