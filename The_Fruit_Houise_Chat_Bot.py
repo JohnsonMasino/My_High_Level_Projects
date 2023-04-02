@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import random as rd
+
 print("Hi there!\nWelcome to The Fruit House...\nPlease note that we deliver only within Enugu State, Nigeria.")
 name = input("What is your name please:  ")
 answer = input(f"Welcome here {name}...\nWould you like to explore our available fruit serves ?\nPlease use 'Yes' or 'No':  ")
@@ -133,14 +135,16 @@ if answer == 'Yes' or answer == 'yes':
         print(f"We are so glad you enjoy our services {name}.")
 #        gift = 7
         print(f"For giving us the best rating {name}, You stand a chance to win a free gift extra from our shop.")
-#        gift_input = int(input("Enter your number of choice between 1 and 5(Both numbers inclusive).\nYou have only one chance:  "))
-        for gift_input in range(0, 6):
+        generated_number = rd.randint(1, 5)
+
+        for gift_input in range(1, 5):
             gift_input = int(input("Enter your number of choice between 1 and 5(Both numbers inclusive).\nYou have only one chance:  "))
-            if gift_input == 4:
+            if gift_input == generated_number:
                 print(f"Congratulations {name}!!!\nYou have won a 9.5kg burger and it will added to your package.")
                 break
             else:
                 print("Sorry...\nYou did not win today")
+                print("The gift was packeged in the number: ", generated_number)
                 break
         else:
             print("Participate in this offer next time.\nThank you.")
