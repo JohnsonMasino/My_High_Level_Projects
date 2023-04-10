@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+#import practice_The_Fruit_Houise_Chat_Bot as pt
 import random as rd
 
 print("Hi there!\nWelcome to The Fruit House...\nPlease note that we deliver only within Enugu State, Nigeria.")
