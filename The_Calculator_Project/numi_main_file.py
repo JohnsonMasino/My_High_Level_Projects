@@ -11,17 +11,19 @@ class NumiCalculator():
         done = expression.split(" ")
         if len(done) == 3:
             if done[1] == '+' or done[1] == 'Plus' or done[1] == 'plus' or done[1] == 'PLUS':
-                done[0] = int(done[0])
-                done[2] = int(done[2])
-                print(NumiCalculator.a0(done[0], done[2]))
+                index0 = int(done[0])
+                index1 = int(done[2])
+                #result = index0 + index1
+                print(NumiCalculator.a0(index0, index1))
             else:
                 print("Unidentified Funtion call...")
         elif len(done) == 5:
             if done[1] == '+' or done[1] == 'Plus' or done[1] == "PLUS" or done[1] == 'plus' and done[3] == "+" or done[3] == "plus" or done[3] == "PLUS" or done[3] == "Plus":
-                done[0] = int(done[0])
-                done[2] = int(done[2])
-                done[4] = int(done[4])
-                print(NumiCalculator.a1(done[0], done[2], done[4]))
+                index0 = int(done[0])
+                index1 = int(done[2])
+                index2 = int(done[4])
+                #result = index0 + index1 + index2
+                print(NumiCalculator.a1(index0, index1, index2))
             else:
                 print("Unidentified Function call...")
         else:
