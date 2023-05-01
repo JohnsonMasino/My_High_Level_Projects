@@ -7,3 +7,9 @@ def adding0(a, b):
     integers and uses '+' as the summation call symbol
     """
     return a + b
+
+def subtracting0(a, b):
+    """this module is called when the user tries to subtract only two
+    integers and uses '-' as the summation call symbol
+    """
+    return a - b
