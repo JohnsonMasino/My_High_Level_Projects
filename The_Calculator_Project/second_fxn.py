@@ -7,3 +7,9 @@ def adding1(a, b, c):
     numbers and uses 'plus' or '+' for the addition function call
     """
     return a + b + c
+
+def subtracting1(a, b, c):
+    """This function is called when the user tries to execute the subtraction of three
+    numbers and uses 'minus' or '-' for the addition function call
+    """
+    return a - b -c
