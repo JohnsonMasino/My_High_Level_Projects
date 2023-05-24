@@ -19,3 +19,9 @@ def multiplying0(a, b):
     integers and uses '*' as the multiplication call symbol
     """
     return a * b
+
+def dividing0(a, b):
+    """this module is called when the user tries to divide a number by a
+    second follow up number only
+    """
+    return a / b
