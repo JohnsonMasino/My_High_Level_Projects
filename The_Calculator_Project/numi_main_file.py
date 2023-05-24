@@ -5,13 +5,13 @@
 class NumiCalculator():
     """Defines the class of the mathematical expression
     """
-    from first_fxn import adding0 as a0, subtracting0 as s0, multiplying0 as m0
-    from second_fxn import adding1 as a1, subtracting1 as s1, multiplying1 as m1
+    from first_fxn import adding0 as a0, subtracting0 as s0, multiplying0 as m0, dividing0 as d0
+    from second_fxn import adding1 as a1, subtracting1 as s1, multiplying1 as m1, dividing1 as d1
     
     def main_fxn():
         """defines the mathematical expression function
         """
-        expression = input("Please enter your mathematical expression here: ")
+        expression = input("Please enter your mathematical expression here. Division in word means 'over': ")
         done = expression.split(" ")
         if len(done) == 3:
             """indicates only two values calculation
@@ -34,6 +34,12 @@ class NumiCalculator():
                 index0 = int(done[0])
                 index1 = int(done[2])
                 print(NumiCalculator.m0(index0, index1))
+            elif done[1] == "/" or done[1] == "Over" or done[1] == "over" or done[1] == "OVER":
+                """calls the division function only
+                """
+                index0 = int(done[0])
+                index1 = int(done[2])
+                print(NumiCalculator.d0(index0, index1))
             else:
                 print("Unidentified Funtion call...")
         elif len(done) == 5:
@@ -60,6 +66,14 @@ class NumiCalculator():
                 index1 = int(done[2])
                 index2 = int(done[4])
                 print(NumiCalculator.m1(index0, index1, index2))
+            elif done[1] == '/' or done[1] == 'Over' or done[1] == "OVER" or done[1] == 'over' and done[3] == "/" or done[3] == "over" or done[3] == "OVER" or done[3] == "Over":
+                """
+                calls the division function only
+                """
+                index0 = int(done[0])
+                index1 = int(done[2])
+                index2 = int(done[4])
+                print(NumiCalculator.d1(index0, index1, index2))
             else:
                 print("Unidentified Function call...")
         else:
