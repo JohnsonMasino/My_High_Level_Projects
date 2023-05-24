@@ -13,3 +13,9 @@ def subtracting0(a, b):
     integers and uses '-' as the summation call symbol
     """
     return a - b
+
+def multiplying0(a, b):
+    """this module is called when the user tries to multiply only two
+    integers and uses '*' as the multiplication call symbol
+    """
+    return a * b
