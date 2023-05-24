@@ -3,10 +3,8 @@
 #This is the main file for the numi-calculator_clone project
 
 class NumiCalculator():
-    from first_fxn import adding0 as a0
-    from first_fxn import subtracting0 as s0
-    from second_fxn import adding1 as a1
-    from second_fxn import subtracting1 as s1
+    from first_fxn import adding0 as a0, subtracting0 as s0
+    from second_fxn import adding1 as a1, subtracting1 as s1
     
     def main_adding_fxn():
         expression = input("Please enter your mathematical expression here: ")
