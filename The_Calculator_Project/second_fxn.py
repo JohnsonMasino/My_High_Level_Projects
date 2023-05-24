@@ -19,3 +19,9 @@ def multiplying1(a, b, c):
     numbers and uses 'times' or '*' for the addition function call
     """
     return a * b * c
+
+def dividing1(a, b, c):
+    """This function is called when the user tries to execute a division of double times
+    all in one expression using 'by' as the division call
+    """
+    return a / b / c
