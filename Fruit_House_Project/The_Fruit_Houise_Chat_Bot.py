@@ -134,7 +134,6 @@ if answer == 'Yes' or answer == 'yes':
         print(f"Wow that is a cool rating {name}. Thanks!!!")
     elif rating == 5:
         print(f"We are so glad you enjoy our services {name}.")
-#        gift = 7
         print(f"For giving us the best rating {name}, You stand a chance to win a free gift extra from our shop.")
         print("Enter a number from 1 through 9 to try your luck")
         generated_number = rd.randint(1, 9)
