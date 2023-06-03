@@ -3,7 +3,7 @@
 #import practice_The_Fruit_Houise_Chat_Bot as pt
 import random as rd
 
-print("Hi there!\nWelcome to The Fruit House...\nPlease note that we deliver only within Enugu State, Nigeria.")
+print("Hello there!\nWelcome to The Fruit House...\nPlease note that we deliver only within Enugu State, Nigeria.")
 name = input("What is your name please:  ")
 answer = input(f"Welcome here {name}...\nWould you like to explore our available fruit serves ?\nPlease use 'Yes' or 'No':  ")
 if answer == 'Yes' or answer == 'yes':
