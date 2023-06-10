@@ -39,7 +39,10 @@ class NumiCalculator():
                 """
                 index0 = int(done[0])
                 index1 = int(done[2])
-                print(NumiCalculator.d0(index0, index1))
+                try:
+                    print(NumiCalculator.d0(index0, index1))
+                except ZeroDivisionError:
+                    print("Division by zero is not allowed")
             else:
                 print("Unidentified Funtion call...")
         elif len(done) == 5:
