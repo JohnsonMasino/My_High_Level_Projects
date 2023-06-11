@@ -13,15 +13,10 @@ class NumiCalculator():
         """
         expression = input("Please enter your mathematical expression here. Division in word means 'over': ")
         done = expression.split(" ")
-
+        
         if len(done) == 3:
             """indicates only two values calculation
             """
-            """if not isinstance(done[0], int):
-                raise TypeError('First input must be a number please...')
-            if not isinstance(done[2], int):
-                raise TypeError('Second input must be a number please...')"""
-
             index0 = int(done[0])
             index1 = int(done[2])
             if done[1] == '+' or done[1] == 'Plus' or done[1] == 'plus' or done[1] == 'PLUS':
@@ -44,6 +39,8 @@ class NumiCalculator():
                 
                 except ZeroDivisionError:
                     print("Division by zero is not allowed")
+                except (ValueError):
+                    print("OOps!!!\nEnter numbers only...")
             else:
                 print("Unidentified Funtion call...")
         elif len(done) == 5:
@@ -76,12 +73,14 @@ class NumiCalculator():
                     print(NumiCalculator.d1(index0, index1, index2))
                 except ZeroDivisionError:
                     print("Division by zero is not allowed please...")
+                except (ValueError):
+                    print("OOps!!!\nEnter numbers only...")
             
             else:
                 print("Unidentified Function call...")
         
         else:
-            print("Sorry!, I am not programmed for this length of calculation yet.\nOr try separating your inputs with a space")
+            print("Sorry!, I am not programmed for this length of calculation yet.\nOr try separating your inputs with a single space")
 
 NumiCalculator.main_fxn()
 print("\nCode develoepd by Masino")
