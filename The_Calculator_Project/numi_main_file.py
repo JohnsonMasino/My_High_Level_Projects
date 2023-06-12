@@ -116,5 +116,6 @@ class NumiCalculator():
         else:
             print("Sorry!, I am not programmed for this length of calculation yet.\nOr try separating your inputs with a single space")
 
-NumiCalculator.main_fxn()
+if __name__ == "__main__":
+    NumiCalculator.main_fxn()
 print("\nCode develoepd by Masino")
