@@ -22,15 +22,33 @@ class NumiCalculator():
             if done[1] == '+' or done[1] == 'Plus' or done[1] == 'plus' or done[1] == 'PLUS':
                 """calls the addition function only
                 """
-                print(NumiCalculator.a0(index0, index1))
+                try:
+                    print(NumiCalculator.a0(index0, index1))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
+            
             elif done[1] == '-' or done[1] == 'Minus' or done[1] == 'minus' or done[1] == 'MINUS':
                 """calls the subtraction function only
                 """
-                print(NumiCalculator.s0(index0, index1))
+                try:
+                    print(NumiCalculator.s0(index0, index1))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
+            
             elif done[1] == "*" or done[1] == "times" or done[1] == "Times" or done[1] == "TIMES":
                 """calls the multiplication functio only
                 """
-                print(NumiCalculator.m0(index0, index1))
+                try:
+                    print(NumiCalculator.m0(index0, index1))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
+            
             elif done[1] == "/" or done[1] == "Over" or done[1] == "over" or done[1] == "OVER":
                 """calls the division function only
                 """
@@ -41,6 +59,7 @@ class NumiCalculator():
                     print("Division by zero is not allowed")
                 except (ValueError):
                     print("OOps!!!\nEnter numbers only...")
+            
             else:
                 print("Unidentified Funtion call...")
         elif len(done) == 5:
@@ -53,17 +72,32 @@ class NumiCalculator():
             if done[1] == '+' or done[1] == 'Plus' or done[1] == "PLUS" or done[1] == 'plus' and done[3] == "+" or done[3] == "plus" or done[3] == "PLUS" or done[3] == "Plus":
                 """calls the addition function only
                 """
-                print(NumiCalculator.a1(index0, index1, index2))
+                try:
+                    print(NumiCalculator.a1(index0, index1, index2))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
 
             elif done[1] == '-' or done[1] == 'Minus' or done[1] == "MINUS" or done[1] == 'minus' and done[3] == "-" or done[3] == "minus" or done[3] == "MINUS" or done[3] == "Minus":
                 """calls the subtraction function only
                 """
-                print(NumiCalculator.s1(index0, index1, index2))
+                try:
+                    print(NumiCalculator.s1(index0, index1, index2))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
 
             elif done[1] == '*' or done[1] == 'Times' or done[1] == "TIMES" or done[1] == 'times' and done[3] == "*" or done[3] == "times" or done[3] == "TIMES" or done[3] == "Times":
                 """calls the multiplication functio only
                 """
-                print(NumiCalculator.m1(index0, index1, index2))
+                try:
+                    print(NumiCalculator.m1(index0, index1, index2))
+                except Exception as e:
+                    print(e)
+                finally:
+                    print("Expression executed successfully...")
             
             elif done[1] == '/' or done[1] == 'Over' or done[1] == "OVER" or done[1] == 'over' and done[3] == "/" or done[3] == "over" or done[3] == "OVER" or done[3] == "Over":
                 """
