@@ -1,6 +1,6 @@
 # Questionaire Python Project
 
-##INTRODUCTION
+## INTRODUCTION
 This project tests your knowledge on simple python modules and records your score
 
 ## AUTHOR
