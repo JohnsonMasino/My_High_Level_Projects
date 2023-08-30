@@ -8,7 +8,7 @@ class ShopBot:
     """This is the class for the chat bot"""
 
     def Shop():
-        """This is the functio for the fruit house project"""
+        """This is the function for the fruit house project"""
         import random as rd
 
         print("Hello there!\nWelcome to The Fruit House...\nPlease note that we deliver only within Enugu State, Nigeria.")
