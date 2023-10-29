@@ -21,14 +21,12 @@ def count(name1, name2):
 
     if len(listed) != len(listed1):
         return False
-    else:
-        """STEP 3:
-        Now lets check if an item in the first name is not in the other name"""
-        for item in listed:
-            if item not in listed1:
-                return False
-            else:
-                return True
+    
+    """STEP 3:
+    Now lets check if an item in the first name is not in the other name"""
+    for item in listed:
+        if item not in listed1:
+            return False
     """This is the correction from STEP 5"""
     letter_list = []
     for item in listed:
