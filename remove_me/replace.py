@@ -23,6 +23,7 @@ def Replace(string: str) -> str:
     Now return the new string and thats it !
     """
     return new_string
+
 if __name__ == "__main__":
     print(Replace("My mom is a hardworking woman"))
-print("\nCode developed by masino")
+    print("\nCode developed by masino")
