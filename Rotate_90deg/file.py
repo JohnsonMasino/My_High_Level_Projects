@@ -1,5 +1,5 @@
 """
-A Python code to 
+A Python code to roll a matrix clockwise to 90 degrees.
 Code developed by Masino
 """
 def Rotate():
