@@ -24,8 +24,8 @@ def Convert(matrix):
 if __name__ == "__main__":
     matrix = [
         [1, 2, 3],
-        [4, 2, 6],
-        [7, 0, 9]
+        [4, 0, 6],
+        [7, 8, 9]
     ]
 
     print("The entered matrix is:")
